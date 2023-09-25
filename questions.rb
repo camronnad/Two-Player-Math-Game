@@ -7,7 +7,15 @@ class Questions
     @answer = @num1 + @num2
   end
 
-  def to_s
+  def question
     "What does #{@num1} + #{@num2} equal?"
   end
+
+  def validate_answer
+    if user_answer == @answer
+      return true
+    else 
+      return false
+    end
+
 end
