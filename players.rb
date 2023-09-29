@@ -7,7 +7,9 @@ attr_accessor :lives, :name
   end
 
   def lose_a_life 
-    lives -= 1
+    @lives -= 1
   end
+
+  
 
 end

@@ -1,5 +1,5 @@
 class Questions
-  attr_reader :answer
+  attr_reader :answer, :num1, :num2 
 
   def initialize
     @num1 = rand(1..20)
@@ -11,11 +11,11 @@ class Questions
     "What does #{@num1} + #{@num2} equal?"
   end
 
-  def validate_answer
-    if user_answer == @answer
+  def validate_answer(user_input)
+    if user_input == @answer
       return true
     else 
       return false
     end
-
+  end
 end

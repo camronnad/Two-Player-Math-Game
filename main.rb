@@ -1,4 +1,4 @@
-require_relative 'player'
+require_relative 'players'
 require_relative 'questions'
 require_relative 'game'
 
